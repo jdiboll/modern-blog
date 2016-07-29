@@ -39,16 +39,21 @@ header {
 	justify-content: space-between;
 	align-content: flex-start;
 	overflow: hidden;
+	//width: calc((100%-60px)/3);
+	margin-right: 150px;
+	margin-left: 150px;
 }
 .article1, .article2, .article3, .article4, .article5, .article6 {
 	text-align: left;
-	//width: calc((100%-60px)/3);
 	width: 320px;
 	color: #11191d;
 }
 img {
 	max-height: 190px;
 	width: 312px;
+}
+.container {
+	width: 400px;
 }
 footer {
 	background-color: #333333;

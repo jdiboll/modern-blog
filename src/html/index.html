@@ -2,6 +2,9 @@
 <html>
 <head>
   <title>Modern Blog</title>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -92,55 +95,58 @@
 					<li><a href="#">2010</a></li>
 				</ul>
 		</div>
-		<div class="widget">
-			<div class="widget-tabs">
-				<ul>
-					<li><a href="#viewed">Most Viewed</a></li>
-					<li><a href="#comments">Most Commented</a></li>
-					<li><a href="#shared">Most Shared</a></li>
+		<div class="container">
+			<div role="tab">
+				<ul class="nav navbar-nav" role="tablist">
+					<li role="presentation" class="active"><a href="#viewed" aria-controls="viewed" role="tab" data-toggle="tab">Most Viewed</a></li>
+					<li role="presentation"><a href="#comments" aria-controls="commented" role="tab" data-toggle="tab">Most Commented</a></li>
+					<li role="presentation"><a href="#shared" aria-controls="shared" role="tab" data-toggle="tab">Most Shared</a></li>
 				</ul>
-			</div>
-			<div class="widget-list" id="viewed">
-				<ol>
-					<li><a href="#title">At the Bottom of the Bottle.</a></li>
-					<li><a href="#title">It's a Girl!</a></li>
-					<li><a href="#title">Being Comfortable being Uncomfortable</a></li>
-					<li><a href="#title">Coming Home</a></li>
-					<li><a href="#title">5 Best ways to Save on the Road</a></li>
-					<li><a href="#title">Peter O'Toole had it Right</a></li>
-					<li><a href="#title">Looking at dem' Daisies from the Top Side</a></li>
-					<li><a href="#title">Why I Miss New York</a></li>
-					<li><a href="#title">"Letters to a Young Poet" - Nothing Will be the Same</a></li>
-					<li><a href="#title">A Clarification of "Work"</a></li>
-				</ol>
-			</div>
-			<div class="widget-list" id="commented">
-				<ol>
-					<li><a href="#title">Every Life is a Valid Life</a></li>
-					<li><a href="#title">This is What She Meant...</a></li>
-					<li><a href="#title">Two Cents: An Extremely Late Response</a></li>
-					<li><a href="#title">It's Been Awhile..</a></li>
-					<li><a href="#title">Feeling the Bern in Alabama</a></li>
-					<li><a href="#title">Tabs or Spaces?</a></li>
-					<li><a href="#title">Where Do We Go From Here</a></li>
-					<li><a href="#title">If it Sounds Too Good to be True...</a></li>
-					<li><a href="#title">Validation</a></li>
-					<li><a href="#title">Where's a Man to Go?</a></li>
-				</ol>
-			</div>
-			<div class="widget-list" id="shared">
-				<ol>
-					<li><a href="#title">Follow Your Bliss</a></li>
-					<li><a href="#title">3, 2, 1, Here We Go!!</a></li>
-					<li><a href="#title">When All the Chairs are Gone</a></li>
-					<li><a href="#title">Telling the Truth to my Wife</a></li>
-					<li><a href="#title">Pickles and Elephants</a></li>
-					<li><a href="#title">Christmas with my Other Family</a></li>
-					<li><a href="#title">Thoughts: High on Caffeine and Bob Dylan</a></li>
-					<li><a href="#title">Venturing into the Darkness</a></li>
-					<li><a href="#title">In The Curve</a></li>
-					<li><a href="#title">The Arrival</a></li>
-				</ol>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="viewed">
+						<ul class>
+							<li><a href="#title">At the Bottom of the Bottle.</a></li>
+							<li><a href="#title">It's a Girl!</a></li>
+							<li><a href="#title">Being Comfortable being Uncomfortable</a></li>
+							<li><a href="#title">Coming Home</a></li>
+							<li><a href="#title">5 Best ways to Save on the Road</a></li>
+							<li c><a href="#title">Peter O'Toole had it Right</a></li>
+							<li><a href="#title">Looking at dem' Daisies from the Top Side</a></li>
+							<li><a href="#title">Why I Miss New York</a></li>
+							<li><a href="#title">"Letters to a Young Poet" - Nothing Will be the Same</a></li>
+							<li><a href="#title">A Clarification of "Work"</a></li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="comments">
+						<ul class>
+							<li><a href="#title">Every Life is a Valid Life</a></li>
+							<li><a href="#title">This is What She Meant...</a></li>
+							<li><a href="#title">Two Cents: An Extremely Late Response</a></li>
+							<li><a href="#title">It's Been Awhile..</a></li>
+							<li><a href="#title">Feeling the Bern in Alabama</a></li>
+							<li><a href="#title">Feeling the Bern in Alabama</a></li>
+							<li><a href="#title">Tabs or Spaces?</a></li>
+							<li><a href="#title">Where Do We Go From Here</a></li>
+							<li><a href="#title">If it Sounds Too Good to be True...</a></li>
+							<li><a href="#title">Validation</a></li>
+							<li><a href="#title">Where's a Man to Go?</a></li>
+						</ul>
+					</div>
+					<div role="tabpanel" class="tab-pane fade" id="shared">
+						<ul class>
+							<li><a href="#title">Follow Your Bliss</a></li>
+							<li><a href="#title">3, 2, 1, Here We Go!!</a></li>
+							<li><a href="#title">When All the Chairs are Gone</a></li>
+							<li><a href="#title">Telling the Truth to my Wife</a></li>
+							<li><a href="#title">Pickles and Elephants</a></li>
+							<li><a href="#title">Christmas with my Other Family</a></li>
+							<li><a href="#title">Thoughts: High on Caffeine and Bob Dylan</a></li>
+							<li><a href="#title">Venturing into the Darkness</a></li>
+							<li><a href="#title">In The Curve</a></li>
+							<li><a href="#title">The Arrival</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<footer>
@@ -148,6 +154,12 @@
 		</footer>
 	</div>
   <div class="app"></div>
+  <!--<script>
+  		$(".nav li").on("click", function(){
+  			$(".nav li").removeClass("active");
+  			$(this).addClass("active");
+ 		})
+  </script>-->
   <script src="js/bundle.js"></script>
 </body>
 </html>
