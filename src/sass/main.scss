@@ -7,38 +7,47 @@
 * {
 	text-decoration: none;
 	list-style: none;
-	box-sizing: border-box;
+	//box-sizing: border-box;
 }
-header {
+body {
+	padding-top: 60px;
+}
+.main-wrapper {
+	background-image: url('../images/cork-wallet.png');
+	//background-size: cover;
+	min-height: 100vh;
+
+}
+.navbar-fixed-top {
 	background-color: #333333;
-	color: #ededed;
-	top: 0;
-	left: 0;
-	position: fixed;
-	//display: flex;
-	//flex-wrap: wrap;
-	//justify-content: space-around;
-	width: 100%;
-	height: 85px;
-	z-index: 1000;
+	//text-transform: uppercase;
+	height: 60px;
 }
-.logo {
-	float: left;
-	font-size: 35px;
-	padding: 17px;
+nav {
+	.navbar-brand {font-size: 35px;}
+	.navbar-toggle {margin: 13px 15px 13px 0;}
+	a {font-size: 18px;
+		padding-bottom: 20px !important;
+		padding-top: 20px !important;
+		transition: all 0.4s ease;
+	}
+}
+.shrink {
+	min-height: 35px;
+	.navbar-brand {font-size: 25px;}
+	.navbar-toggle {margin: 8px 15px 8px 0;
+					padding: 4px 5px;
+				}
+	height: 40px;
+	a {font-size: 15px;
+		padding-bottom: 10px !important;
+		padding-top: 10px !important;
+	}
+}
 
 
-}
-.eyebrow-nav a {
-	letter-spacing: 2px;
-	display: inline-block;
-	color: #ededed;
-	float: right;
-	padding: 20px;
-	margin-top: 10px;
-}
 .main-nav {
-	padding-top: 85px;
+	//padding-top: 85px;
 }
 .article-wrapper {
 	display: flex;
