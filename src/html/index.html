@@ -6,6 +6,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -20,7 +21,7 @@
   			</div>
   			<div class="collapse navbar-collapse" id="mainNavBar">
   				<ul class="nav navbar-nav pull-right">
-  					<li class="active"><a href="#">About</a></li>
+  					<li><a href="#">About</a></li>
   					<li><a href="#">Contact</a></li>
   					<li><a href="#">Donate</a></li>
   				</ul>
@@ -38,54 +39,62 @@
 			</ul>
 		</div>
 		<div class="article-wrapper">
-			<div class="article1">
+			<!--<div class="media-links">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-snapchat" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>-->
+				<div class="article1">
 					<a href="#"> 
-						<img src="../images/infinity-9727047.jpg" />
+						<img src="../images/infinity-9727047.jpg" class="img-responsive"/>
 						<h4>Playing the Infinity Game</h4>
 						<h6>07/14/16</h6>
 						<p>Taking a look at theories put forth by Jonathan Silva and where they fit in our everyday lives.</p>
 					</a>
-			</div>
-			<div class="article6">
+				</div>
+				<div class="article6">
 					<a href="#"> 
-						<img src="../images/computer.jpg" />
+						<img src="../images/computer.jpg" class="img-responsive"/>
 						<h4>Top 10 Emerging Technologies in 2016</h4>
 						<h6>06/24/16</h6>
 						<p>From the rise of The Cloud, we move ever closer to ambient technology.</p>
 					</a>
-			</div>
-			<div class="article5">
+				</div>
+				<div class="article5">
 					<a href="#"> 
-						<img src="../images/relaxation.jpg"/>
+						<img src="../images/relaxation.jpg" class="img-responsive"/>
 						<h4>Scale Back, Slow Down</h4>
 						<h6>05/28/16</h6>
 						<p>One can discover so much on a quiet Tuesday afternoon.</p>
 					</a>
-			</div>
-			<div class="article4">
+				</div>
+				<div class="article4">
 					<a href="#"> 
-						<img src="../images/thanksgiving.jpg"/>
+						<img src="../images/thanksgiving.jpg" class="img-responsive"/>
 						<h4>A Difficult Thing to Hear</h4>
 						<h6>05/01/16</h6>
 						<p>Examining Fear Of Missing Out and learning to not take things personally.</p>
 					</a>
-			</div>
-			<div class="article3">
+				</div>
+				<div class="article3">
 					<a href="#"> 
-						<img src="../images/bliss3.jpeg" />
+						<img src="../images/bliss3.jpeg"  class="img-responsive"/>
 						<h4>Note to Self...</h4>
 						<h6>04/05/16</h6>
 						<p>Just finished reading "The Power of Myth", and nothing will ever be the same.</p>
 					</a>
-			</div>
-			<div class="article2">
+				</div>
+				<div class="article2">
 					<a href="#"> 
-						<img src="../images/charlee.jpg" />
+						<img src="../images/charlee.jpg"  class="img-responsive"/>
 						<h4>Life Lessons from Charlee</h4>
 						<h6>03/12/16</h6>
 						<p>Our children hold so many lessons for us, especially whenwe focus on seeing ourselves in them.</p>
 					</a>
-			</div>
+				</div>
 		</div>
 		<div class="newsletter">
 			<h4>Subscribe to our Newsletter!</h4>
@@ -122,7 +131,7 @@
 							<li c><a href="#title">Peter O'Toole had it Right</a></li>
 							<li><a href="#title">Looking at dem' Daisies from the Top Side</a></li>
 							<li><a href="#title">Why I Miss New York</a></li>
-							<li><a href="#title">"Letters to a Young Poet" - Nothing Will be the Same</a></li>
+							<li><a href="#title">"Letters to a Young Poet" - The Power of Solitude</a></li>
 							<li><a href="#title">A Clarification of "Work"</a></li>
 						</ul>
 					</div>
@@ -157,7 +166,7 @@
 				</div>
 			</div>
 		</div>
-		</div>
+	</div>
 		<footer>
 		&copy<span>Jason Huffman</span>
 		</footer>
@@ -165,7 +174,7 @@
   <div class="app"></div>
   <script>
   		$(window).scroll(function(){
-  			if($(document).scrollTop() > 1) {
+  			if($(document).scrollTop() > 50) {
   			$('nav').addClass('shrink');
  		} else {
  			$('nav').removeClass('shrink');

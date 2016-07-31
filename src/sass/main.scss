@@ -10,22 +10,52 @@
 	//box-sizing: border-box;
 }
 body {
-	padding-top: 60px;
+	padding-top: 70px;
+	font-family: "Open Sans", Arial, sans-serif;
 }
 .main-wrapper {
-	background-image: url('../images/cork-wallet.png');
-	//background-size: cover;
+	background-color: #fafafa;
 	min-height: 100vh;
-
 }
+a {
+	color: #000;
+	&:hover {
+		color: #000;
+		text-decoration: none;
+		h4 {
+			color: #15a1ff;
+		}
+		img {
+			opacity: 0.7;
+		}
+	}
+}
+
 .navbar-fixed-top {
 	background-color: #333333;
 	//text-transform: uppercase;
-	height: 60px;
+	height: 70px;
+	border: none;
 }
+.navbar-header {
+	padding-left: 20px;
+	//padding-top: 4px;
+}
+.navbar-default .navbar-brand {
+	color: #fafafa;
+	font-family: 'Oswald', sans-serif;
+
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fafafa;
+	&:hover {
+		color: #15a1ff;
+	}
+}
+
 nav {
 	.navbar-brand {font-size: 35px;}
-	.navbar-toggle {margin: 13px 15px 13px 0;}
+	.navbar-toggle {margin: 13px 20px 13px 0;}
 	a {font-size: 18px;
 		padding-bottom: 20px !important;
 		padding-top: 20px !important;
@@ -46,8 +76,12 @@ nav {
 }
 
 
-.main-nav {
-	//padding-top: 85px;
+.media-links {
+	float: left;
+	padding: 20px;
+	padding-right: 100px;
+	position: fixed;
+	font-size: 20px;
 }
 .article-wrapper {
 	display: flex;
@@ -56,14 +90,17 @@ nav {
 	align-content: flex-start;
 	overflow: hidden;
 	//width: calc((100%-60px)/3);
-	padding-right: 120px;
-	padding-left: 120px;
+	margin-right: 120px;
+	margin-left: 120px;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
 }
 .article1, .article2, .article3, .article4, .article5, .article6 {
 	text-align: left;
-	width: 320px;
+	width: 325px;
 	color: #11191d;
 	padding: 20px;
+	margin-top: 20px;
 }
 img {
 	max-height: 190px;
@@ -71,6 +108,7 @@ img {
 }
 .container {
 	width: 400px;
+	padding-bottom: 15px;
 }
 footer {
 	background-color: #333333;
