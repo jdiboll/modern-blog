@@ -44,12 +44,17 @@ a {
 .navbar-default .navbar-brand {
 	color: #fafafa;
 	font-family: 'Oswald', sans-serif;
+	&:hover {
+		color: #fafafa;
+		cursor: pointer;
+	}
 
 }
 .navbar-default .navbar-nav > li > a {
 	color: #fafafa;
 	&:hover {
 		color: #15a1ff;
+		cursor: pointer;
 	}
 }
 
@@ -101,10 +106,74 @@ nav {
 	color: #11191d;
 	padding: 20px;
 	margin-top: 20px;
+	&:hover {
+		a {
+		cursor: pointer;
+		}
+	}
 }
 img {
 	max-height: 190px;
 	width: 290px;
+}
+.mid-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//width: 100%;
+	margin-left: 120px;
+	margin-right: 120px;
+
+}
+.about-me {
+	display: inline-block;
+	width: 45%;
+}
+.about-me ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	//margin-left: 120px;
+	padding: 0;
+
+}
+.about-me li {
+	max-width: 300px;
+	padding-top: 25px;
+}
+.about-me img {
+	box-shadow: 0 5px 5px -3px #666666;
+	width: 150px;
+	height: 290px;
+
+}
+.newsletter {
+	float: left;
+	max-width: 50%;
+	margin-left: 120px;
+	display: block;
+	background-color: #333333;
+	padding: 45px;
+	box-shadow: 0 5px 5px -3px #666666;
+}
+.newsletter button {
+	background-color: #15a1ff;
+	border-radius: 5px;
+	color: #fff;
+	border: none;
+	outline: none;
+	margin: 15px;
+	font-weight: 500;
+}
+.newsletter input {
+	outline: none;
+	margin: 15px;
+	width: 170px;
+}
+.newsletter h4 {
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
 }
 .container {
 	width: 400px;
